@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ediya Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48482d3815.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="fas fa-concierge-bell"></i>
+            <a>어디야? 이디야!</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li id="menu"   style="cursor: pointer;">메뉴</li>
+            <li id="random" style="cursor: pointer;">!랜덤!</li>
+            <li id="review" style="cursor: pointer;">후기작성</li>
+        </ul>
+
+        <ul class="navbar__icons">
+            <a href="https://github.com/yerin-20245922/final-project_open-source-programming.git">GitHub
+                <li><i class="fab fa-github"></i></li>
+            </a>
+        </ul>
+
+        <a href="#" class="navbar__toogle">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="container__menu">
+        <details>            
+            <summary>커피</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>카페 아메리카노</td>
+                        <td>3,500원</td>
+                        <td>16.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td>시그니처 라떼</td>
+                        <td>4,700원</td>
+                        <td>376.0Kcal</td>
+                        <td>9.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>22</th>
+                        <td>민트 모히또 라떼</td>
+                        <td>4,900원</td>
+                        <td>446.0Kcal</td>
+                        <td>31.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>64</th>
+                        <td>아샷추(복숭아)</td>
+                        <td>3,400원</td>
+                        <td>173.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>복숭아, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>64</th>
+                        <td>제로슈가 아샷추(복숭아)</td>
+                        <td>3,400원</td>
+                        <td>14.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>복숭아, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>달달커피</td>
+                        <td>2,900원</td>
+                        <td>277.0Kcal</td>
+                        <td>20.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>넛넛츠 크림 라떼</td>
+                        <td>4,700원</td>
+                        <td>429.0Kcal</td>
+                        <td>51.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>59</th>
+                        <td>연유 카페라떼</td>
+                        <td>4,500원</td>
+                        <td>386.0Kcal</td>
+                        <td>49.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>59</th>
+                        <td>카페 라떼</td>
+                        <td>4,200원</td>
+                        <td>203.0Kcal</td>
+                        <td>15.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>카라멜 마끼아또</td>
+                        <td>4,500원</td>
+                        <td>285.0Kcal</td>
+                        <td>36.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>59</th>
+                        <td>바닐라 라떼</td>
+                        <td>4,500원</td>
+                        <td>303.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>카페 모카</td>
+                        <td>4,500원</td>
+                        <td>424.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>화이트 초콜릿 모카</td>
+                        <td>4,500원</td>
+                        <td>420.0Kcal</td>
+                        <td>40.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>민트 모카</td>
+                        <td>4,900원</td>
+                        <td>484.0Kcal</td>
+                        <td>45.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>에스프레소</td>
+                        <td>2,900원</td>
+                        <td>8.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>에스프레소 마끼아또</td>
+                        <td>3,200원</td>
+                        <td>14.0Kcal</td>
+                        <td>1.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>에스프레소 콘파냐</td>
+                        <td>3,200원</td>
+                        <td>47Kcal</td>
+                        <td>2.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>카푸치노</td>
+                        <td>4,200원</td>
+                        <td>129.0Kcal</td>
+                        <td>9.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>콜드브루</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>34</th>
+                        <td>콜드브루</td>
+                        <td>3,900원</td>
+                        <td>12.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>34</th>
+                        <td>바닐라 오트 콜드브루</td>
+                        <td>5,200원</td>
+                        <td>206.0Kcal</td>
+                        <td>16.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>67</th>
+                        <td>연유 콜드브루</td>
+                        <td>4,700원</td>
+                        <td>282.0Kcal</td>
+                        <td>37.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>흑당 콜드브루</td>
+                        <td>4,200원</td>
+                        <td>239.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>우유, 아황산류, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>20</th>
+                        <td>콜드브루 라떼</td>
+                        <td>4,500원</td>
+                        <td>134.0Kcal</td>
+                        <td>10.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>66</th>
+                        <td>콜드브루 화이트비엔나</td>
+                        <td>4,900원</td>
+                        <td>267.0Kcal</td>
+                        <td>32.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>콜드브루 니트로</td>
+                        <td>4,200원</td>
+                        <td>14.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>디카페인</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>디카페인 카페 아메리카노</td>
+                        <td>3,700원</td>
+                        <td>11.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td>디카페인 시그니처 라떼</td>
+                        <td>5,200원</td>
+                        <td>371.0Kcal</td>
+                        <td>9.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>64</th>
+                        <td>디카페인 아샷추(복숭아)</td>
+                        <td>3,400원</td>
+                        <td>170.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>복숭아</td>
+                    </tr>                
+                    <tr>
+                        <th>59</th>
+                        <td>디카페인 카페 라떼</td>
+                        <td>4,700원</td>
+                        <td>136.0Kcal</td>
+                        <td>10.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>디카페인 카라멜 마끼아또</td>
+                        <td>5,000원</td>
+                        <td>280.0Kcal</td>
+                        <td>36.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>디카페인 카페 모카</td>
+                        <td>5,000원</td>
+                        <td>348.0Kcal</td>
+                        <td>33.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>디카페인 에스프레소</td>
+                        <td>3,400원</td>
+                        <td>5.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>디카페인 카푸치노</td>
+                        <td>4,700원</td>
+                        <td>140.0Kcal</td>
+                        <td>10.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>34</th>
+                        <td>디카페인 콜드브루</td>
+                        <td>4,200원</td>
+                        <td>7.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th>34</th>
+                        <td>디카페인 바닐라 오트 콜드브루</td>
+                        <td>5,500원</td>
+                        <td>205.0Kcal</td>
+                        <td>16.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>66</th>
+                        <td>디카페인 콜드브루 화이트비엔나</td>
+                        <td>5,200원</td>
+                        <td>265.0Kcal</td>
+                        <td>32.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>디카페인 콜드브루 니트로</td>
+                        <td>4,500원</td>
+                        <td>9.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>밀크</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>39</th>
+                        <td>딸기 듬뿍 라떼</td>
+                        <td>4,200원</td>
+                        <td>220.0Kcal</td>
+                        <td>37.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>32</th>
+                        <td>흑임자 크림 라떼</td>
+                        <td>4,500원</td>
+                        <td>344.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>우유, 대두, 밀</td>
+                    </tr>
+                    <tr>
+                        <th>43</th>
+                        <td>토피 넛 라떼</td>
+                        <td>4,200원</td>
+                        <td>222.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>55</th>
+                        <td>녹차 라떼</td>
+                        <td>3,900원</td>
+                        <td>191.0Kcal</td>
+                        <td>25.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>62</th>
+                        <td>12곡 라떼</td>
+                        <td>3,700원</td>
+                        <td>239.0Kcal</td>
+                        <td>22.0g</td>
+                        <td>우유, 대두, 밀</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>고구마 라떼</td>
+                        <td>4,200원</td>
+                        <td>344.0Kcal</td>
+                        <td>37.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>60</th>
+                        <td>그래놀라 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>356.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>60</th>
+                        <td>딸기 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>329.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>60</th>
+                        <td>블루베리 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>346.0Kcal</td>
+                        <td>47.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>60</th>
+                        <td>망고 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>329.0Kcal</td>
+                        <td>43.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>달고나 라떼</td>
+                        <td>3,700원</td>
+                        <td>286.0Kcal</td>
+                        <td>41.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>흑당 라떼</td>
+                        <td>3,700원</td>
+                        <td>233.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>우유, 아황산류</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>초콜릿</td>
+                        <td>3,900원</td>
+                        <td>318.0Kcal</td>
+                        <td>28.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>민트 초콜릿</td>
+                        <td>4,200원</td>
+                        <td>397.0Kcal</td>
+                        <td>34.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>버블 흑당 라떼</td>
+                        <td>4,700원</td>
+                        <td>308.0Kcal</td>
+                        <td>35.0g</td>
+                        <td>우유, 아황산류</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>버블 크림 밀크티</td>
+                        <td>4,700원</td>
+                        <td>319.0Kcal</td>
+                        <td>27.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>블렌디드</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>생딸기 연유 플랫치노</td>
+                        <td>5,700원</td>
+                        <td>397.0Kcal</td>
+                        <td>64.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <td>망고 플랫치노</td>
+                        <td>3,900원</td>
+                        <td>258.0Kcal</td>
+                        <td>65.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>꿀복숭아 플랫치노</td>
+                        <td>3,900원</td>
+                        <td>225.0Kcal</td>
+                        <td>49.0g</td>
+                        <td>복숭아</td>
+                    </tr>
+                    <tr>
+                        <td>플레인 요거트 플랫치노</td>
+                        <td>4,500원</td>
+                        <td>229.0Kcal</td>
+                        <td>32.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <td>블루베리 요거트 플랫치노</td>
+                        <td>4,700원</td>
+                        <td>297.0Kcal</td>
+                        <td>47.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <td>딸기 요거트 플랫치노</td>
+                        <td>4,700원</td>
+                        <td>313.0Kcal</td>
+                        <td>53.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <td>초콜릿 칩 플랫치노</td>
+                        <td>4,500원</td>
+                        <td>387.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <td>민트 초콜릿 칩 플랫치노</td>
+                        <td>4,500원</td>
+                        <td>493.0Kcal</td>
+                        <td>52.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <td>초코 쿠키 쉐이크</td>
+                        <td>4,900원</td>
+                        <td>449.0Kcal</td>
+                        <td>70.0g</td>
+                        <td>우유, 대두, 밀</td>
+                    </tr>
+                    <tr>
+                        <td>딸기 쉐이크</td>
+                        <td>5,200원</td>
+                        <td>454.0Kcal</td>
+                        <td>85.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <td>오리진 쉐이크</td>
+                        <td>4,700원</td>
+                        <td>355.0Kcal</td>
+                        <td>63.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>티</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>홀리데이 레드뱅쇼</td>
+                        <td>4,900원</td>
+                        <td>201.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>아황산류</td>
+                    </tr>
+                    <tr>
+                        <td>윈터 화이트뱅쇼</td>
+                        <td>4,900원</td>
+                        <td>223.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>홍시 동동 수정과</td>
+                        <td>4,200원</td>
+                        <td>225.0Kcal</td>
+                        <td>45.0g</td>
+                        <td>아황산류</td>
+                    </tr>
+                    <tr>
+                        <td>배 모과차</td>
+                        <td>4,200원</td>
+                        <td>149.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>아망추(복숭아)</td>
+                        <td>3,900원</td>
+                        <td>218.0Kcal</td>
+                        <td>49.0g</td>
+                        <td>복숭아</td>
+                    </tr>
+                    <tr>
+                        <td>제로슈가 아이스티(복숭아)</td>
+                        <td>2,900원</td>
+                        <td>9.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>복숭아</td>
+                    </tr>
+                    <tr>
+                        <td>복숭아 아이스티</td>
+                        <td>2,900원</td>
+                        <td>165.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>복숭아</td>
+                    </tr>
+                    <tr>
+                        <td>레몬 아이스티</td>
+                        <td>2,900원</td>
+                        <td>158.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>대두</td>
+                    </tr>
+                    <tr>
+                        <td>살얼음 식혜</td>
+                        <td>4,200원</td>
+                        <td>219.0Kcal</td>
+                        <td>50.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>석류 애플라임</td>
+                        <td>5,100원</td>
+                        <td>346.0Kcal</td>
+                        <td>74.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>유자 피나콜라다</td>
+                        <td>5,100원</td>
+                        <td>291.0Kcal</td>
+                        <td>67.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>자몽 네이블오렌지</td>
+                        <td>5,100원</td>
+                        <td>322.0Kcal</td>
+                        <td>73.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>밀크티</td>
+                        <td>4,200원</td>
+                        <td>167.0Kcal</td>
+                        <td>20.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <td>유자차</td>
+                        <td>4,200원</td>
+                        <td>187.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>자몽치</td>
+                        <td>4,200원</td>
+                        <td>186.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>그린루이보스</td>
+                        <td>3,200원</td>
+                        <td>8.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>복숭아</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+    </div>
+    
+
+    <div class="review__writing">
+        <h1>Site Reviews</h1>
+        <details>
+            <summary>후기 작성하기</summary>
+            <textarea id="review-input" placeholder="어디야? 이디야! 에 대한 후기를 작성하세요..." rows="4" cols="100"></textarea>
+            <br>
+            <button id="submit-review-btn">리뷰 제출</button>
+        </details>
+        <h2>리뷰 목록</h2>
+            <div id="review-list"></div>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>
